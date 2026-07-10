@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>同城视频匹配 - 濮阳同城视频交友</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .filter-box {
+            background: var(--soft-dark);
+            padding: 30px;
+            border-radius: var(--radius-md);
+            margin-bottom: 40px;
+        }
+        .filter-row {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 24px;
+        }
+        .filter-item label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--text-gray);
+        }
+        .filter-item select {
+            width: 100%;
+            padding: 12px;
+            background: var(--dark-bg);
+            border: 1px solid #333;
+            border-radius: var(--radius-md);
+            color: #fff;
+        }
+        .search-match {
+            width: 100%;
+            padding: 14px;
+            background: var(--main-gradient);
+            border-radius: var(--radius-md);
+            color: #fff;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav-wrap">
+        <a href="index.html" class="logo">濮阳视频交友</a>
+        <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="live.html">热门直播间</a></li>
+            <li><a href="short-video.html">短视频广场</a></li>
+            <li><a href="match.html" class="active">同城视频匹配</a></li>
+            <li><a href="user-home.html">个人中心</a></li>
+        </ul>
+        <div>
+            <a href="user-home.html" class="start-live-btn">开启直播</a>
+            <a href="login.html" class="login-btn">登录/注册</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="section-title">
+        <h2>同城智能视频匹配</h2>
+        <p class="section-desc">按濮阳区域、年龄、爱好筛选，一键发起视频连麦邀约</p>
+    </div>
+
+    <!-- 筛选面板 -->
+    <div class="filter-box">
+        <div class="filter-row">
+            <div class="filter-item">
+                <label>所在区县</label>
+                <select>
+                    <option>全部区域</option>
+                    <option>华龙区</option>
+                    <option>濮阳县</option>
+                    <option>清丰县</option>
+                    <option>南乐县</option>
+                    <option>台前县</option>
+                    <option>范县</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label>年龄范围</label>
+                <select>
+                    <option>全部年龄</option>
+                    <option>18-22岁</option>
+                    <option>23-27岁</option>
+                    <option>28-32岁</option>
+                    <option>33岁以上</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label>性别</label>
+                <select>
+                    <option>不限</option>
+                    <option>女生</option>
+                    <option>男生</option>
+                </select>
+            </div>
+            <div class="filter-item">
+                <label>兴趣爱好</label>
+                <select>
+                    <option>全部爱好</option>
+                    <option>探店美食</option>
+                    <option>运动户外</option>
+                    <option>唱歌才艺</option>
+                    <option>追剧桌游</option>
+                </select>
+            </div>
+        </div>
+        <button class="search-match">开始匹配同城好友</button>
+    </div>
+
+    <!-- 匹配用户卡片 -->
+    <div class="live-row" id="liveWrap"></div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="foot-row">
+            <div class="foot-col">
+                <h3>濮阳视频交友</h3>
+                <p>专注濮阳本地线上视频相亲、实时连麦交友，线上匹配线下见面，杜绝异地虚假账号。</p>
+            </div>
+            <div class="foot-col">
+                <h3>快速导航</h3>
+                <p><a href="live.html">热门直播间</a></p>
+                <p><a href="short-video.html">短视频广场</a></p>
+                <p><a href="match.html">同城视频匹配</a></p>
+            </div>
+            <div class="foot-col">
+                <h3>客服支持</h3>
+                <p>客服微信：Chinexexiaoyi</p>
+                <p>服务时间：9:00-23:00</p>
+                <p>地址：濮阳市华龙区万达商务大厦</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 濮阳同城视频交友 | 本项目仅前端演示，无线上真实直播服务
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
