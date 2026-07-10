@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心 - 濮阳同城视频交友</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .user-top {
+            background: var(--main-gradient);
+            padding: 50px 30px;
+            border-radius: var(--radius-md);
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+        .avatar {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #fff;
+        }
+        .user-info h3 {
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+        .user-info p {
+            font-size: 16px;
+            opacity: 0.9;
+            line-height: 1.8;
+        }
+        .user-btn-group {
+            margin-top: 20px;
+            display: flex;
+            gap: 16px;
+        }
+        .live-start {
+            padding: 12px 30px;
+            background: #fff;
+            color: var(--pink);
+            border-radius: 30px;
+            font-weight: 600;
+        }
+        .edit-info {
+            padding: 12px 30px;
+            border: 1px solid #fff;
+            color: #fff;
+            border-radius: 30px;
+            background: transparent;
+        }
+        .tab-title {
+            display: flex;
+            gap: 40px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid #333;
+            padding-bottom: 12px;
+        }
+        .tab-title span {
+            font-size: 18px;
+            padding-bottom: 12px;
+            cursor: pointer;
+        }
+        .tab-title span.active {
+            border-bottom: 3px solid var(--pink);
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <div class="container nav-wrap">
+        <a href="index.html" class="logo">濮阳视频交友</a>
+        <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="live.html">热门直播间</a></li>
+            <li><a href="short-video.html">短视频广场</a></li>
+            <li><a href="match.html">同城视频匹配</a></li>
+            <li><a href="user-home.html" class="active">个人中心</a></li>
+        </ul>
+        <div>
+            <a href="user-home.html" class="start-live-btn">开启直播</a>
+            <a href="login.html" class="login-btn">登录/注册</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <!-- 个人头部信息 -->
+    <div class="user-top">
+        <img class="avatar" src="https://picsum.photos/id/64/200/200">
+        <div class="user-info">
+            <h3>本地小姐姐晓晓</h3>
+            <p>📍 华龙区 | 24岁 | 爱好：探店、唱歌、连麦聊天</p>
+            <p>粉丝：1268人 | 发布作品：32条 | 开播场次：56场</p>
+            <div class="user-btn-group">
+                <a href="live.html" class="live-start">立即开播</a>
+                <button class="edit-info">编辑个人资料</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 作品标签栏 -->
+    <div class="tab-title">
+        <span class="active">我的短视频作品</span>
+        <span>我的直播间记录</span>
+        <span>我的粉丝列表</span>
+    </div>
+
+    <!-- 个人短视频作品 -->
+    <div class="short-row" id="shortWrap"></div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="foot-row">
+            <div class="foot-col">
+                <h3>濮阳视频交友</h3>
+                <p>专注濮阳本地线上视频相亲、实时连麦交友，线上匹配线下见面，杜绝异地虚假账号。</p>
+            </div>
+            <div class="foot-col">
+                <h3>快速导航</h3>
+                <p><a href="live.html">热门直播间</a></p>
+                <p><a href="short-video.html">短视频广场</a></p>
+                <p><a href="match.html">同城视频匹配</a></p>
+            </div>
+            <div class="foot-col">
+                <h3>客服支持</h3>
+                <p>客服微信：Chinexexiaoyi</p>
+                <p>服务时间：9:00-23:00</p>
+                <p>地址：濮阳市华龙区万达商务大厦</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 濮阳同城视频交友 | 本项目仅前端演示，无线上真实直播服务
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
