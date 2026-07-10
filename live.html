@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>直播间 - 濮阳同城视频交友</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header>
+    <div class="container nav-wrap">
+        <a href="index.html" class="logo">濮阳视频交友</a>
+        <ul class="nav-list">
+            <li><a href="index.html">首页</a></li>
+            <li><a href="live.html" class="active">热门直播间</a></li>
+            <li><a href="short-video.html">短视频广场</a></li>
+            <li><a href="match.html">同城视频匹配</a></li>
+            <li><a href="user-home.html">个人中心</a></li>
+        </ul>
+        <div>
+            <a href="user-home.html" class="start-live-btn">开启直播</a>
+            <a href="login.html" class="login-btn">登录/注册</a>
+        </div>
+    </div>
+</header>
+
+<div class="container">
+    <div class="live-page-wrap">
+        <!-- 主视频窗口 -->
+        <div class="live-main">
+            <div class="live-video-box"></div>
+            <!-- 底部控制栏 -->
+            <div class="live-control-bar">
+                <div class="live-ctrl-left">
+                    <button>🔇 静音</button>
+                    <button>📞 发起连麦</button>
+                    <button>📷 切换画面</button>
+                </div>
+                <div class="live-ctrl-right">
+                    <button class="gift-btn">🎁 赠送礼物</button>
+                </div>
+            </div>
+        </div>
+        <!-- 右侧弹幕聊天区 -->
+        <div class="live-sidebar">
+            <div class="barrage-box" id="barrageBox"></div>
+            <div class="send-barrage">
+                <input type="text" id="barrageInput" placeholder="输入弹幕发送给主播...">
+                <button onclick="sendBarrage()">发送</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="foot-row">
+            <div class="foot-col">
+                <h3>濮阳视频交友</h3>
+                <p>专注濮阳本地线上视频相亲、实时连麦交友，线上匹配线下见面，杜绝异地虚假账号。</p>
+            </div>
+            <div class="foot-col">
+                <h3>快速导航</h3>
+                <p><a href="live.html">热门直播间</a></p>
+                <p><a href="short-video.html">短视频广场</a></p>
+                <p><a href="match.html">同城视频匹配</a></p>
+            </div>
+            <div class="foot-col">
+                <h3>客服支持</h3>
+                <p>客服微信：Chinexexiaoyi</p>
+                <p>服务时间：9:00-23:00</p>
+                <p>地址：濮阳市华龙区万达商务大厦</p>
+            </div>
+        </div>
+        <div class="copyright">
+            © 2026 濮阳同城视频交友 | 本项目仅前端演示，无线上真实直播服务
+        </div>
+    </div>
+</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
